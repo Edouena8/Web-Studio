@@ -1,17 +1,30 @@
 .contacts {
     @extend %reset-list;  
 
-    display: flex;
-    gap: 50px;
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      gap: 50px;
+    }
+  }
+
+  .contacts {
+    margin-left: auto;
+  }
+
+  .contacts__item-mail {
+    margin-bottom: 10px;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
+    }
   }
  
   .contacts__link {
     @extend %reset-link;
-
-    display: flex;
-    align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
  
     font-weight: 500;
     font-size: 14px;
@@ -21,6 +34,12 @@
  
     transition: color var(--animation);
   
+    @media screen and (min-width: 1200px) {
+      padding-top: 32px;
+      padding-bottom: 32px;
+      display: flex;
+      align-items: center;
+    }
  
     &:hover,
     &:focus {

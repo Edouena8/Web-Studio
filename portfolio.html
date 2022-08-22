@@ -34,6 +34,12 @@
           lang="en">Web<span class="header__word">Studio</span>
         </a>
 
+        <button class="menu-btn" type="button" data-menu-open>
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#burger-menu"></use>
+          </svg>
+        </button>
+
         <nav class="nav">
           <ul class="nav__list ">
             <li class="nav__item">
@@ -48,8 +54,8 @@
           </ul>
         </nav>
 
-        <ul class="contacts ">
-          <li>
+        <ul class="contacts">
+          <li class="contacts__item-mail">
             <a 
               class="contacts__link" 
               href="mailto:info@devstudio.com">
@@ -59,7 +65,7 @@
               info@devstudio.com
             </a>
           </li>
-          <li>
+          <li class="contacts__item">
             <a class="contacts__link" href="tel:+380961111111">
               <svg class="contacts__icon" width="16" height="12">
                 <use href="./images/icons.svg#smartphone"></use>
@@ -98,9 +104,18 @@
               <a class="portfolio__link" href="#" target="_blank" rel="noopener noreferrer">
                 <div class="portfolio__cards">
                 <img
-                src="./images/Portfolio/img.jpg"
+                srcset="
+                ./images/portfolio.w/1/img@1x_md-1-354.jpg 354w,
+                ./images/portfolio.w/1/img@1x_lg-1-370.jpg 370w,
+                ./images/portfolio.w/1/img@1x_sm-1-450.jpg 450w,
+                ./images/portfolio.w/1/img@2x_md-1-708.jpg 708w,
+                ./images/portfolio.w/1/img@2x_lg-1-740.jpg 740w,
+                ./images/portfolio.w/1/img@2x_sm-1-900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (man-width: 767px) 450px, 100vw"
+                src="./images/portfolio.w/img@1x_md-1-354.jpg"
                 alt="Карточки трьох працівників"
-                width="370"
+                width="450"
                 height="294"
               />
               <div class="portfolio__overlay"> 
@@ -116,9 +131,18 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href="#" target="_blank" rel="noopener noreferrer">
               <img
-                src="./images/Portfolio/players.jpg"
+                srcset="
+                ./images/portfolio.w/2/img@1x_md-2-354.jpg 354w,
+                ./images/portfolio.w/2/img@1x_lg-2-370.jpg 370w,
+                ./images/portfolio.w/2/img@2x_sm-2-450.jpg 450w,
+                ./images/portfolio.w/2/img@2x_md-2-708.jpg 708w,
+                ./images/portfolio.w/2/img@2x_lg-1-740.jpg 740w,
+                ./images/portfolio.w/2/img@1x_sm-2-900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (man-width: 767px) 450px, 100vw"
+                src="./images/portfolio.w/2/img@1x_md-2-354.jpg"
                 alt="Два баскетболіста"
-                width="370"
+                width="450"
                 height="294"
               />
               <div class="portfolio__wrapper">
@@ -130,9 +154,18 @@
             <li class="portfolio__item"> 
               <a class="portfolio__link" href="#" target="_blank" rel="noopener noreferrer">
               <img
-                src="./images/Portfolio/restaurant.jpg"
+              srcset="
+              ./images/portfolio.w/3/img@1x_md-3-354.jpg 354w,
+              ./images/portfolio.w/3/img@1x_lg-3-370.jpg 370w,
+              ./images/portfolio.w/3/img@1x_sm-3-450.jpg 450w,
+              ./images/portfolio.w/3/img@2x_md-3-708.jpg 708w,
+              ./images/portfolio.w/3/img@2x_lg-3-740.jpg 740w,
+              ./images/portfolio.w/3/img@2x_sm-3-900.jpg 900w
+              "
+              sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (man-width: 767px) 450px, 100vw"
+                src="./images/portfolio.w/3/img@1x_md-3-354.jpg"
                 alt="Логотип ресторану"
-                width="370"
+                width="450"
                 height="294"
               />
               <div class="portfolio__wrapper">
@@ -144,9 +177,18 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href="#" target="_blank" rel="noopener noreferrer">
               <img 
-                src="./images/Portfolio/prime.jpg" 
+              srcset="
+              ./images/portfolio.w/4/img@1x_md-4-354.jpg 354w,
+              ./images/portfolio.w/4/img@1x_lg-4-370.jpg 370w,
+              ./images/portfolio.w/4/img@1x_sm-4-450.jpg 450w,
+              ./images/portfolio.w/4/img@2x_md-4-708.jpg 708w,
+              ./images/portfolio.w/4/img@2x_lg-4-740.jpg 740w,
+              ./images/portfolio.w/4/img@2x_sm-4-900.jpg 900w
+              "
+              sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (man-width: 767px) 450px, 100vw"
+                src="./images/portfolio.w/4/img@1x_md-4-354.jpg" 
                 alt="Навушники" 
-                width="370" 
+                width="450" 
                 height="294" />
               <div class="portfolio__wrapper">
                 <h2 class="portfolio__title">Проєкт Prime</h2>
@@ -157,9 +199,18 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href="#" target="_blank" rel="noopener noreferrer">
               <img 
-                src="./images/Portfolio/boxes.jpg" 
+                srcset="
+                ./images/portfolio.w/5/img@1x_md-5-354.jpg 354w,
+                ./images/portfolio.w/5/img@1x_lg-5-370.jpg 370w,
+                ./images/portfolio.w/5/img@1x_sm-5-450.jpg 450w,
+                ./images/portfolio.w/5/img@2x_md-5-708.jpg 708w,
+                ./images/portfolio.w/5/img@2x_lg-5-740.jpg 740w,
+                ./images/portfolio.w/5/img@2x_sm-5-900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (man-width: 767px) 450px, 100vw"
+                src="./images/portfolio.w/5/img@1x_md-5-354.jpg" 
                 alt="Бокси" 
-                width="370" 
+                width="450" 
                 height="294" />
               <div class="portfolio__wrapper">
                 <h2 class="portfolio__title">Проєкт Boxes</h2>
@@ -170,9 +221,18 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href="#" target="_blank" rel="noopener noreferrer">
               <img
-                src="./images/Portfolio/computer.jpg"
+                srcset="
+                ./images/portfolio.w/6/img@1x_md-6-354.jpg 354w,
+                ./images/portfolio.w/6/img@1x_lg-6-370.jpg 370w,
+                ./images/portfolio.w/6/img@1x_sm-6-450.jpg 450w,
+                ./images/portfolio.w/6/img@2x_md-6-708.jpg 708w,
+                ./images/portfolio.w/6/img@2x_lg-6-740.jpg 740w,
+                ./images/portfolio.w/6/img@2x_sm-6-900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (man-width: 767px) 450px, 100vw"
+                src="./images/portfolio.w/6/img@1x_md-6-354.jpg"
                 alt="Монітор"
-                width="370"
+                width="450"
                 height="294"
               />
               <div class="portfolio__wrapper">
@@ -184,9 +244,18 @@
             <li class="portfolio__item">
               <a class="portfolio__link link" href="#" target="_blank" rel="noopener noreferrer">
               <img
-                src="./images/Portfolio/book.jpg"
+                srcset="
+                ./images/portfolio.w/7/img@1x_md-7-354.jpg 254w,
+                ./images/portfolio.w/7/img@1x_lg-7-370.jpg 370w,
+                ./images/portfolio.w/7/img@1x_sm-7-450.jpg 450w,
+                ./images/portfolio.w/7/img@2x_md-7-708.jpg 708w,
+                ./images/portfolio.w/7/img@2x_lg-7-740.jpg 740w,
+                ./images/portfolio.w/7/img@2x_sm-7-900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (man-width: 767px) 450px, 100vw"
+                src="./images/portfolio.w/7/img@1x_md-7-354.jpg"
                 alt="Розкрита книга"
-                width="370"
+                width="450"
                 height="294"
               />
               <div class="portfolio__wrapper">
@@ -198,9 +267,18 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href="#" target="_blank" rel="noopener noreferrer">
               <img
-                src="./images/Portfolio/lab.jpg"
+              srcset="
+              ./images/portfolio.w/8/img@1x_md-8-354.jpg 354w,
+              ./images/portfolio.w/8/img@1x_lg-8-370.jpg 370w,
+              ./images/portfolio.w/8/img@1x_sm-8-450.jpg 450w,
+              ./images/portfolio.w/8/img@2x_md-8-708.jpg 708w,
+              ./images/portfolio.w/8/img@2x_lg-8-740.jpg 740w,
+              ./images/portfolio.w/8/img@2x_sm-8-900.jpg 900w
+              "
+                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (man-width: 767px) 450px, 100vw"
+                src="./images/portfolio.w/8/img@1x_md-8-354.jpg"
                 alt="Логотип проєкта ЛАБ"
-                width="370"
+                width="450"
                 height="294"
               />
               <div class="portfolio__wrapper">
@@ -212,9 +290,18 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href="#" target="_blank" rel="noopener noreferrer">
               <img
-                src="./images/Portfolio/notebook.jpg"
+                srcset="
+                ./images/portfolio.w/9/img@1x_md-9-354.jpg 354w,
+                ./images/portfolio.w/9/img@1x_lg-9-370.jpg 370w,
+                ./images/portfolio.w/9/img@1x_sm-9-450.jpg 450w,
+                ./images/portfolio.w/9/img@2x_md-9-708.jpg 708w,
+                ./images/portfolio.w/9/img@2x_lg-9-740.jpg 740w,
+                ./images/portfolio.w/9/img@2x_sm-9-900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (man-width: 767px) 450px, 100vw"
+                src="./images/portfolio.w/9/img@1x_md-9-354.jpg"
                 alt="Ноутбук"
-                width="370"
+                width="450"
                 height="294"
               />
               <div class="portfolio__wrapper">
@@ -331,8 +418,55 @@
           </div>
 
           <!-- End -->
+
+          <div class="menu-overlay" data-menu>
+            <div class="mobile-menu">
+              <button class="mobmenu-btn" type="button" data-menu-close>
+                <svg class="mobmenu-btn__close-icon" width="40" height="40">
+                  <use href="./images/icons.svg#menu-close"></use>
+                </svg>
+              </button>
+                <ul class="mobile-menu__list">
+                  <li class="mobile-menu__item">
+                    <a href="./index.html" class="mobile-menu__link">Студія</a>
+                  </li>
+                  <li class="mobile-menu__item">
+                    <a href="./portfolio.html" class="mobile-menu__link">Портфоліо</a>
+                  </li>
+                  <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__link">Контакти</a>
+                  </li>
+                </ul>
+        
+                <ul class="mobile-cont mobile-cont__list">
+                  <li class="mobile-cont__item">
+                    <a class="mobile-cont__link" href="tel:+380961111111">+38 096 111 11 11</a>
+                  </li>
+                  <li class="mobile-cont__item">
+                    <a class="mobile-cont__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                  </li>
+                </ul>
+        
+                <ul class="mobile-socials mobile-socials__list">
+                  <li class="mobile-socials__item">
+                    <a class="mobile-socials__link" href="">Instagram</a>
+                  </li>
+                  <li class="mobile-socials__item">
+                    <a class="mobile-socials__link" href="">Twitter</a>
+                  </li>
+                  <li class="mobile-socials__item">
+                    <a class="mobile-socials__link" href="">Facebook</a>
+                  </li>
+                  <li class="mobile-socials__item">
+                    <a class="mobile-socials__link" href="">Linkedin</a>
+                  </li>
+                </ul>
+            </div>
+            </div>
+
+            <script src="./js/menu.js"></script>
         </div>
       </div>
-    </footer>
+    </footer> 
   </body>
 </html>

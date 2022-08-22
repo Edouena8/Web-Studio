@@ -4,26 +4,54 @@
     padding-bottom: 200px;
     margin: 0 auto;
     background-color: var(--dark-bg-cl);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../images/logo-opt.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/hero/Header\ img@1x_sm.jpg');
+      @media (min-device-pixel-eatio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero/Header\ img@2x_sm.jpg');
+      }
+
+    @media screen and (min-width: 768px) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/hero/Header\ img@1x_md.jpg');
+
+      @media (min-device-pixel-eatio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../../images/hero/Header\ img@2x_md.jpg');
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/hero/Img@1x_lg.jpg');
+
+      @media (min-device-pixel-eatio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero/Img@2x_lg.jpg');
+      }
+    }
  }
 
  .hero__title {
-    width: 696px;
+    width: 360px;
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
 
     font-weight: 900;
-    font-size: 44px;
-    line-height: calc(60 / 44);
+    font-size: 26px;
+    line-height: calc(42 / 26);
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--secondary-txt-cl);
+
+    @media screen and (min-width: 1200px) {
+      width: 696px;
+      font-size: 44px;
+      line-height: calc(60 / 44);
+    }
  }
 
  .hero__btn {

@@ -43,6 +43,12 @@
           lang="en">Web<span class="header__word">Studio</span>
         </a>
 
+        <button class="menu-btn" type="button" data-menu-open>
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#burger-menu"></use>
+          </svg>
+        </button>
+
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
@@ -58,7 +64,7 @@
         </nav>
 
         <ul class="contacts">
-          <li>
+          <li class="contacts__item-mail">
             <a 
               class="contacts__link" 
               href="mailto:info@devstudio.com">
@@ -68,7 +74,7 @@
               info@devstudio.com
             </a>
           </li>
-          <li>
+          <li class="contacts__item">
             <a class="contacts__link" href="tel:+380961111111">
               <svg class="contacts__icon" width="16" height="12">
                 <use href="./images/icons.svg#smartphone"></use>
@@ -92,7 +98,7 @@
 
       <!-- Features section -->
       <section class="features">
-        <div class="container">
+        <div class="features__container container">
           <ul class="features-list">
             <li class="features-list__item">
               <div class="features-list__thumb">
@@ -147,18 +153,19 @@
 
       <!-- Occupation -->
       <section class="occupation" id="studio">
-        <div class="container">
+        <div class="occupation__container container">
           <h2 class="occupation-title title">Чим ми займаємося</h2>
 
           <ul class="occupation__list">
             <li class="occupation__item">
               <img
+                srcset="./images/uccupation/img@1x_1.jpg 1x, ./images/uccupation/img@2x_1.jpg 2x"
                 class="occupation__img"
-                src="./images/computer.jpg.jpg"
+                src="./images/uccupation/img@1x_1.jpg"
                 alt="Планшет с клавиатурой"
                 width="370"
                 height="294"
-              />
+              /> 
                 <div class="occupation__overlay">
                   <p class="occupation__text">Десктопні додатки</p>
                 </div>
@@ -166,8 +173,9 @@
 
             <li class="occupation__item">
               <img
+                srcset="./images/uccupation/img@1x_2.jpg 1x, ./images/uccupation/img@2x_2.jpg 2x"
                 class="occupation__img"
-                src="./images/computer2.jpg.jpg"
+                src="./images/uccupation/img@1x_2.jpg"
                 alt="Ноутбук"
                 width="370"
                 height="294"
@@ -179,8 +187,9 @@
 
             <li class="occupation__item">
               <img
+                srcset="./images/uccupation/img@1x_3.jpg 1x, ./images/uccupation/img@2x_3.jpg 2x"
                 class="occupation__img"
-                src="./images/computer3.jpg.jpg"
+                src="./images/uccupation/img@1x_3.jpg"
                 alt="Планшет с цветной картинкой"
                 width="370"
                 height="294"
@@ -200,12 +209,22 @@
           <ul class="team-list">
             <li class="team-list__item">
               <img
+                srcset="
+                ./images/team/1/img@1x_lg-1-270.jpg 270w, 
+                ./images/team/1/img@1x_md-1-354.jpg 354w,
+                ./images/team/1/img@1x_sm-1-450.jpg 450w,
+                ./images/team/1/img@2x_lg-1-540.jpg 540w,
+                ./images/team/1/img@2x_md-1-708.jpg 708w,
+                ./images/team/1/img@2x_sm-1-900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (man-width: 767px) 450px, 100vw"
                 class="team-list__img"
-                src="./images/igor.jpg"
+                src="./images/team/1/img@1x_lg-1-270.jpg"
                 alt="Игорь Демьяненко"
-                width="270"
-                height="260"
+                width="450"
+                height="460"
               />
+
               <div class="team-list__wrapper">
                 <h3 class="team-list__name">Игорь Демьяненко</h3>
                 <p class="team-list__description" lang="en">Product Designer</p>
@@ -268,11 +287,20 @@
 
             <li class="team-list__item">
               <img
-                class="team-list__img"
+                srcset="
+                ./images/team/2/img@1x_lg-2-270.jpg 270w, 
+                ./images/team/2/img@1x_md-2-354.jpg 354w,
+                ./images/team/2/img@1x_sm-2-450.jpg 450w,
+                ./images/team/2/img@2x_lg-2-540.jpg 540w,
+                ./images/team/2/img@2x_md-2-708.jpg 708w,
+                ./images/team/2/img@2x_sm-2-900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (man-width: 767px) 450px, 100vw"
+                class="./images/team/2/img@1x_lg-2-270.jpg"
                 src="./images/olga.jpg"
                 alt="Ольга Репина"
-                width="270"
-                height="260"
+                width="450"
+                height="460"
               />
               <div class="team-list__wrapper">
                 <h3 class="team-list__name">Ольга Репина</h3>
@@ -336,11 +364,20 @@
 
             <li class="team-list__item">
               <img
+                srcset="
+                ./images/team/3/img@1x_lg-3-270.jpg 270w, 
+                ./images/team/3/img@1x_md-3-354.jpg 354w,
+                ./images/team/3/img@1x_sm-3-450.jpg 450w,
+                ./images/team/3/img@2x_lg-3-540.jpg 540w,
+                ./images/team/3/img@2x_md-3-708.jpg 708w,
+                ./images/team/3/img@2x_sm-3-900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (man-width: 767px) 450px, 100vw"
                 class="team-list__img"
-                src="./images/nikolay.jpg"
+                src="./images/team/3/img@1x_lg-3-270.jpg"
                 alt="Николай Тарасов"
-                width="270"
-                height="260"
+                width="450"
+                height="460"
               />
               <div class="team-list__wrapper">
                 <h3 class="team-list__name">Николай Тарасов</h3>
@@ -404,11 +441,20 @@
 
             <li class="team-list__item">
               <img
+                srcset="
+                ./images/team/4/img@1x_lg-4-270.jpg 270w, 
+                ./images/team/4/img@1x_md-4-354.jpg 354w,
+                ./images/team/4/img@1x_sm-4-450.jpg 450w,
+                ./images/team/4/img@2x_lg-4-540.jpg 540w,
+                ./images/team/4/img@2x_md-4-708.jpg 708w,
+                ./images/team/4/img@2x_sm-4-900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (man-width: 767px) 450px, 100vw"
                 class="team-list__img"
-                src="./images/miсhael.jpg"
+                src="./images/team/4/img@1x_lg-4-270.jpg"
                 alt="Михаил Ермаков"
-                width="270"
-                height="260"
+                width="450"
+                height="460"
               />
               <div class="team-list__wrapper">
                 <h3 class="team-list__name">Михаил Ермаков</h3>
@@ -564,6 +610,7 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-contr">
+          <div class="footer-contr__group">
           <div class="address-contr">
             <a class="footer__logo logo" href="./index.html" lang="en">Web<span class="footer__word">Studio</span></a>
         
@@ -639,6 +686,7 @@
               </a>
               </li>
             </ul>
+          </div> 
           </div>
           
           <!-- Form -->
@@ -658,13 +706,12 @@
                   </svg>
                 </button>
               </form>
-            
           </div>
 
           <!-- End -->
         </div>
       </div>
-    </footer>
+    </footer> -->
 
         <!-- Modal window -->
         <div class="backdrop is-hidden" data-modal>
@@ -728,6 +775,54 @@
             </form>
           </div>
         </div>
-    <script src="./js/modal.js"></script>   
+      
+  
+    <!-- Mobile menu -->
+    <div class="menu-overlay" data-menu>
+    <div class="mobile-menu">
+      <button class="mobmenu-btn" type="button" data-menu-close>
+        <svg class="mobmenu-btn__close-icon" width="40" height="40">
+          <use href="./images/icons.svg#menu-close"></use>
+        </svg>
+      </button>
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__item">
+            <a href="./index.html" class="mobile-menu__link">Студія</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="./portfolio.html" class="mobile-menu__link">Портфоліо</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="" class="mobile-menu__link">Контакти</a>
+          </li>
+        </ul>
+
+        <ul class="mobile-cont mobile-cont__list">
+          <li class="mobile-cont__item">
+            <a class="mobile-cont__link mobile-cont__link--tel" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
+          <li class="mobile-cont__item">
+            <a class="mobile-cont__link mobile-cont__link--mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+        </ul>
+
+        <ul class="mobile-socials mobile-socials__list">
+          <li class="mobile-socials__item">
+            <a class="mobile-socials__link" href="">Instagram</a>
+          </li>
+          <li class="mobile-socials__item">
+            <a class="mobile-socials__link" href="">Twitter</a>
+          </li>
+          <li class="mobile-socials__item">
+            <a class="mobile-socials__link" href="">Facebook</a>
+          </li>
+          <li class="mobile-socials__item">
+            <a class="mobile-socials__link" href="">Linkedin</a>
+          </li>
+        </ul>
+    </div>
+    </div>
+    <script src="./js/modal.js"></script> 
+    <script src="./js/menu.js"></script>
   </body>
 </html>
