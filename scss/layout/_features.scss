@@ -6,10 +6,6 @@
     }
 }
 
-.features__container {
-   text-align: center;
-}
-
 .features-list {
     @extend %reset-list;
 
@@ -74,6 +70,10 @@
      line-height: calc(16 / 14);
      letter-spacing: 0.03em;
      text-transform: uppercase;
+
+     @media screen and (min-width: 768px) {
+      text-align: left;
+     }
   }
  
   .features-list__text {
