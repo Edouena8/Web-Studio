@@ -1522,6 +1522,7 @@ img {
 
 .portfolio__item {
   max-width: 450px;
+  border: 1px solid #EEEEEE;
 }
 @media screen and (min-width: 768px) {
   .portfolio__item {
@@ -1541,6 +1542,7 @@ img {
   transition: -webkit-box-shadow var(--animation);
   transition: box-shadow var(--animation);
   transition: box-shadow var(--animation), -webkit-box-shadow var(--animation);
+  width: 100%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1619,11 +1621,6 @@ img {
 
 .portfolio__wrapper {
   padding: 20px 24px;
-  border-top: none;
-  border: 1px solid #EEEEEE;
-}
-.portfolio__wrapper:hover, .portfolio__wrapper:focus {
-  border: none;
 }
 
 .portfolio__title {
