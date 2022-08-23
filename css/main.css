@@ -126,8 +126,7 @@ img {
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(1) rotate(0);
           transform: translate(-50%, -50%) scale(1) rotate(0);
-  max-width: 450px;
-  width: 100%;
+  width: 450px;
   min-height: 609px;
   padding: 40px;
   background: #FFFFFF;
@@ -143,6 +142,12 @@ img {
 .backdrop.is-hidden .modal {
   -webkit-transform: translate(-50%, -50%) scale(0.3) rotate(1turn);
           transform: translate(-50%, -50%) scale(0.3) rotate(1turn);
+}
+@media screen and (max-width: 449px) {
+  .modal {
+    width: 100%;
+    max-width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {
